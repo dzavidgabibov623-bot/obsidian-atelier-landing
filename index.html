@@ -1,353 +1,287 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Адрес Хабаровск — агентство поиска жилья · V2</title>
+    <title>Obsidian Atelier | Rare Masculine Fragrance</title>
     <meta
       name="description"
-      content="Локальное агентство поиска жилья в Хабаровске: аренда и покупка квартир под задачу клиента, район, бюджет и сроки."
+      content="Obsidian Atelier is a niche masculine fragrance house built around extrait concentration, raw materials, restraint, and tactile ritual."
     />
-    <link rel="stylesheet" href="./styles.css?v=20260517-anchorfix" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260517-perfume" />
   </head>
   <body>
-    <header class="topbar" aria-label="Навигация">
-      <a class="brand" href="#top" aria-label="Адрес Хабаровск">
-        <span>АДРЕС</span>
-        <span>ХАБАРОВСК</span>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Obsidian Atelier home">
+        <span class="brand-mark" aria-hidden="true">OA</span>
+        <span class="brand-name">
+          <strong>Obsidian</strong>
+          <em>Atelier</em>
+        </span>
       </a>
-      <nav>
-        <a href="#cases">Кейсы</a>
-        <a href="#pricing">Пакеты</a>
-        <a href="#contact">Контакты</a>
+      <nav class="primary-nav" aria-label="Page sections">
+        <a href="#philosophy">Philosophy</a>
+        <a href="#selection">Selection</a>
+        <a href="#craft">Composition</a>
+        <a href="#purchase">Purchase</a>
       </nav>
-      <a class="phone-link" href="tel:+74212900877">+7 4212 900-877</a>
+      <a class="header-cta" href="#purchase">Buy now</a>
     </header>
 
     <main id="top">
-      <section class="hero section-grid">
-        <div class="hero-rail">
-          <span>ПОИСК ЖИЛЬЯ</span>
-          <span>РЕЗУЛЬТАТ ДО ДОГОВОРА</span>
-        </div>
-
-        <div class="hero-title">
-          <h1>АДРЕС<br />ХАБАРОВСК</h1>
-          <p>
-            Находим квартиры и дома под реальные задачи: район, бюджет, сроки,
-            документы и условия заселения.
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="house-line">Extrait de Parfum / Men 30-50</p>
+          <h1 id="hero-title">
+            <span>Obsidian</span>
+            <span>Atelier</span>
+          </h1>
+          <p class="hero-manifesto">
+            Rare masculine fragrances built like private objects: smoked woods, mineral shadow,
+            restrained leather, and a deliberate trail that stays close to the wearer.
           </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn btn-primary" href="#purchase">Shop the fragrance</a>
+            <a class="btn btn-secondary" href="#inquiry">Find your fragrance</a>
+          </div>
         </div>
 
-        <figure class="hero-image">
+        <figure class="hero-object reveal">
           <img
-            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=85"
-            alt="Современный интерьер квартиры"
+            src="./assets/perfume-hero.png"
+            alt="Heavy dark glass perfume bottle on charcoal stone with matte black packaging"
             fetchpriority="high"
           />
         </figure>
 
-        <div class="hero-cta panel-dark">
-          <p>Оставьте параметры: район, бюджет, срок. Ответим с реалистичным планом поиска.</p>
-          <a href="#contact" class="cta">Оставить заявку</a>
-          <a href="tel:+74212900877" class="cta secondary">Позвонить</a>
-        </div>
-
-        <dl class="hero-meta">
-          <div>
-            <dt>15 лет</dt>
-            <dd>в рынке жилья Хабаровска</dd>
-          </div>
-          <div>
-            <dt>2 400+</dt>
-            <dd>клиентов прошли подбор</dd>
-          </div>
-          <div>
-            <dt>7 районов</dt>
-            <dd>знаем по домам и сценариям жизни</dd>
-          </div>
-        </dl>
+        <aside class="hero-spec reveal" aria-label="Fragrance house details">
+          <dl>
+            <div>
+              <dt>Concentration</dt>
+              <dd>22-28% extrait</dd>
+            </div>
+            <div>
+              <dt>Object</dt>
+              <dd>smoked glass / stone cap</dd>
+            </div>
+            <div>
+              <dt>Logic</dt>
+              <dd>edited, dry, architectural</dd>
+            </div>
+          </dl>
+        </aside>
       </section>
 
-      <section class="about section-grid" id="about">
-        <div class="section-label">КОМПАНИЯ</div>
-        <div class="section-title">
-          <h2>Местная команда, которая ищет не объявления, а подходящий адрес.</h2>
+      <section class="philosophy panel-light" id="philosophy" aria-labelledby="philosophy-title">
+        <div class="section-number" aria-hidden="true">01</div>
+        <div class="section-copy reveal">
+          <h2 id="philosophy-title">A fragrance house for men who prefer precision over display.</h2>
         </div>
-        <div class="about-copy">
+        <div class="section-body reveal">
           <p>
-            Работаем в Хабаровске с арендой и покупкой. Проверяем документы,
-            сопоставляем районы с маршрутом клиента, отсекаем слабые варианты и
-            ведём переговоры до понятных условий.
+            Obsidian Atelier composes extrait fragrances in small edited formulas, built around
+            dry materials with physical presence: cedar, vetiver, birch smoke, ink, black tea,
+            leather, labdanum, and mineral amber.
           </p>
           <p>
-            Мы не показываем ленту объектов. Мы собираем короткий список решений:
-            что подходит, где компромисс, на чём можно торговаться и где риск.
+            The house exists for the space between tailoring and ritual. Each scent is direct in
+            structure, close in projection, and designed to become part of a man's daily objects
+            rather than a public performance.
           </p>
         </div>
-        <div class="fact-grid">
-          <article>
-            <strong>15</strong>
-            <span>лет локального опыта</span>
-          </article>
-          <article>
-            <strong>72 ч</strong>
-            <span>обычно до первого сильного списка</span>
-          </article>
-          <article>
-            <strong>0</strong>
-            <span>оплат за случайные просмотры</span>
-          </article>
-          <article>
-            <strong>ХБР</strong>
-            <span>Центр, Северный, Южный, Индустриальный</span>
-          </article>
-        </div>
       </section>
 
-      <section class="cases" id="cases">
-        <div class="section-grid cases-head">
-          <div class="section-label">НАЙДЕННОЕ ЖИЛЬЁ</div>
-          <h2>Завершённые поиски вместо витрины объектов.</h2>
-        </div>
-
-        <article class="case-row">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1100&q=85"
-              alt="Светлая квартира с гостиной"
-              loading="lazy"
-            />
-          </figure>
-          <div class="case-index">01</div>
-          <div class="case-body">
-            <div class="case-meta">
-              <span>Центральный район</span>
-              <span>до 65 000 ₽ / мес.</span>
-            </div>
-            <h3>Квартира для семьи рядом со школой и работой.</h3>
-            <p>
-              Запрос: 3 комнаты, свежий ремонт, без долгих поездок через город.
-              Результат: нашли квартиру у Амурского бульвара, согласовали
-              проживание с ребёнком и зафиксировали условия на 11 месяцев.
-            </p>
-          </div>
-        </article>
-
-        <article class="case-row reverse">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1100&q=85"
-              alt="Кухня и гостиная в современной квартире"
-              loading="lazy"
-            />
-          </figure>
-          <div class="case-index">02</div>
-          <div class="case-body">
-            <div class="case-meta">
-              <span>Индустриальный район</span>
-              <span>8,9 млн ₽</span>
-            </div>
-            <h3>Покупка без слабых документов.</h3>
-            <p>
-              Запрос: двухкомнатная квартира для переезда, дом не старше 2015
-              года. Результат: подобрали объект у улицы Павла Морозова, проверили
-              историю переходов права и добились снижения цены на 280 000 ₽.
-            </p>
-          </div>
-        </article>
-
-        <article class="case-row">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1100&q=85"
-              alt="Спальня в нейтральных тонах"
-              loading="lazy"
-            />
-          </figure>
-          <div class="case-index">03</div>
-          <div class="case-body">
-            <div class="case-meta">
-              <span>Северный микрорайон</span>
-              <span>до 38 000 ₽ / мес.</span>
-            </div>
-            <h3>Быстрая аренда для специалиста по контракту.</h3>
-            <p>
-              Запрос: чистая однокомнатная квартира, быстрый заезд, рядом с
-              транспортом. Результат: нашли вариант за 2 дня, проверили
-              собственника и оформили передачу ключей в день приезда.
-            </p>
-          </div>
-        </article>
-
-        <article class="case-row reverse">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85"
-              alt="Современный дом с большими окнами"
-              loading="lazy"
-            />
-          </figure>
-          <div class="case-index">04</div>
-          <div class="case-body">
-            <div class="case-meta">
-              <span>Краснофлотский район</span>
-              <span>14,6 млн ₽</span>
-            </div>
-            <h3>Дом для жизни у города, не дачный компромисс.</h3>
-            <p>
-              Запрос: дом с коммуникациями, нормальной дорогой и школой в
-              доступе. Результат: нашли объект с газовым отоплением, проверили
-              участок и согласовали включение техники в стоимость.
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section class="testimonials section-grid">
-        <div class="section-label">ОТЗЫВЫ</div>
-        <blockquote>
+      <section class="selection" id="selection" aria-labelledby="selection-title">
+        <div class="selection-head reveal">
+          <span class="section-number" aria-hidden="true">02</span>
+          <h2 id="selection-title">Four core fragrances. No seasonal noise.</h2>
           <p>
-            “Нам не присылали всё подряд. Было пять вариантов, три просмотра и
-            один нормальный договор без сюрпризов.”
+            The line is intentionally narrow. Each formula owns a different register of masculine
+            restraint: smoke, paper, leather, and stone.
           </p>
-          <cite>Алина и Сергей, переезд из Комсомольска-на-Амуре</cite>
-        </blockquote>
-        <blockquote>
+        </div>
+
+        <div class="fragrance-list" aria-label="Core fragrance selection">
+          <article class="fragrance-row reveal is-active" data-fragrance="Black Cedar">
+            <span class="fragrance-index">01</span>
+            <div class="fragrance-title">
+              <h3>Black Cedar</h3>
+              <p>Charred cedar / cypress resin / Haitian vetiver</p>
+            </div>
+            <div class="bottle-mini bottle-cedar" aria-hidden="true"></div>
+            <p class="fragrance-notes">
+              Dry wood, cold smoke, and a mineral base. The most direct signature in the line.
+            </p>
+            <button class="text-action" type="button">Select</button>
+          </article>
+
+          <article class="fragrance-row reveal" data-fragrance="Iron Smoke">
+            <span class="fragrance-index">02</span>
+            <div class="fragrance-title">
+              <h3>Iron Smoke</h3>
+              <p>Birch tar / incense resin / mineral amber</p>
+            </div>
+            <div class="bottle-mini bottle-smoke" aria-hidden="true"></div>
+            <p class="fragrance-notes">
+              Darker and colder, with a metallic edge and a slow resinous drydown.
+            </p>
+            <button class="text-action" type="button">Select</button>
+          </article>
+
+          <article class="fragrance-row reveal" data-fragrance="Paper Leather">
+            <span class="fragrance-index">03</span>
+            <div class="fragrance-title">
+              <h3>Paper Leather</h3>
+              <p>Black tea / suede accord / dry iris</p>
+            </div>
+            <div class="bottle-mini bottle-paper" aria-hidden="true"></div>
+            <p class="fragrance-notes">
+              Quiet, polished, and intellectual. Leather without sweetness or gloss.
+            </p>
+            <button class="text-action" type="button">Select</button>
+          </article>
+
+          <article class="fragrance-row reveal" data-fragrance="Olive Shadow">
+            <span class="fragrance-index">04</span>
+            <div class="fragrance-title">
+              <h3>Olive Shadow</h3>
+              <p>Galbanum / mate leaf / oakmoss</p>
+            </div>
+            <div class="bottle-mini bottle-olive" aria-hidden="true"></div>
+            <p class="fragrance-notes">
+              Green, bitter, and tailored. Built for men who dislike obvious freshness.
+            </p>
+            <button class="text-action" type="button">Select</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="craft panel-dark" id="craft" aria-labelledby="craft-title">
+        <figure class="craft-image reveal">
+          <img
+            src="./assets/perfume-selection.png"
+            alt="Four dark architectural perfume bottles arranged with stone, blotters, leather, and raw materials"
+            loading="lazy"
+          />
+        </figure>
+        <div class="craft-copy reveal">
+          <span class="section-number" aria-hidden="true">03</span>
+          <h2 id="craft-title">Composition before decoration.</h2>
           <p>
-            “Сразу объяснили, почему часть квартир не стоит смотреть. Сэкономили
-            неделю и помогли сторговаться.”
+            Each extrait is built in three movements: a controlled opening, a textured material
+            center, and a dry architectural base that holds for hours without turning cosmetic.
           </p>
-          <cite>Игорь, покупка в Индустриальном районе</cite>
-        </blockquote>
+          <dl class="composition-grid">
+            <div>
+              <dt>Top structure</dt>
+              <dd>black tea, cold spices, aromatic resin</dd>
+            </div>
+            <div>
+              <dt>Material center</dt>
+              <dd>cedar, smoke, suede, vetiver, green leaf</dd>
+            </div>
+            <div>
+              <dt>Base frame</dt>
+              <dd>labdanum, oakmoss, mineral amber, dry woods</dd>
+            </div>
+            <div>
+              <dt>Format</dt>
+              <dd>50 ml extrait, discovery set, private consultation</dd>
+            </div>
+          </dl>
+        </div>
       </section>
 
-      <section class="pricing" id="pricing">
-        <div class="section-grid pricing-head">
-          <div class="section-label">СТОИМОСТЬ</div>
-          <h2>Три формата работы. Сравнить можно за минуту.</h2>
+      <section class="why panel-light" aria-labelledby="why-title">
+        <div class="section-number" aria-hidden="true">04</div>
+        <div class="section-copy reveal">
+          <h2 id="why-title">Serious objects, serious formulas.</h2>
         </div>
-
-        <div class="pricing-grid">
+        <div class="proof-columns reveal">
           <article>
-            <div class="package-top">
-              <h3>СТАРТ</h3>
-              <strong>от 12 000 ₽</strong>
-            </div>
-            <p>Для аренды, когда параметры понятны и нужно быстро отобрать живые варианты.</p>
-            <ul>
-              <li>бриф по району и бюджету</li>
-              <li>короткий список объектов</li>
-              <li>проверка собственника</li>
-              <li>сопровождение договора</li>
-            </ul>
+            <h3>Edited range</h3>
+            <p>Four permanent formulas keep the house legible and avoid inventory masquerading as choice.</p>
           </article>
-
-          <article class="featured">
-            <div class="package-top">
-              <h3>ПОИСК</h3>
-              <strong>от 28 000 ₽</strong>
-            </div>
-            <p>Основной пакет для аренды или покупки с переговорами и сравнением районов.</p>
-            <ul>
-              <li>стратегия поиска</li>
-              <li>просмотры с агентом</li>
-              <li>переговоры по цене</li>
-              <li>проверка документов</li>
-            </ul>
-          </article>
-
           <article>
-            <div class="package-top">
-              <h3>ПОД КЛЮЧ</h3>
-              <strong>по договору</strong>
-            </div>
-            <p>Для переезда, семейной покупки или сложного запроса с жёсткими сроками.</p>
-            <ul>
-              <li>полный аудит вариантов</li>
-              <li>юридическая координация</li>
-              <li>торг и условия сделки</li>
-              <li>передача ключей</li>
-            </ul>
+            <h3>Extrait strength</h3>
+            <p>Higher concentration supports texture, wear, and close projection without loud diffusion.</p>
+          </article>
+          <article>
+            <h3>Material clarity</h3>
+            <p>Each composition is anchored by recognizable woods, resins, mosses, and leather facets.</p>
+          </article>
+          <article>
+            <h3>Object discipline</h3>
+            <p>The bottle uses weight, dark glass, and a squared cap to feel collected, not decorated.</p>
           </article>
         </div>
       </section>
 
-      <section class="contact" id="contact">
-        <div class="contact-head">
-          <h2>Сформулируйте задачу. Мы скажем, где искать и что реально найти.</h2>
-          <a href="tel:+74212900877" class="contact-phone">+7 4212 900-877</a>
+      <section class="purchase" id="purchase" aria-labelledby="purchase-title">
+        <div class="purchase-copy reveal">
+          <span class="section-number" aria-hidden="true">05</span>
+          <h2 id="purchase-title">Choose one bottle. Or start with a measured consultation.</h2>
+          <p>
+            Purchase is intentionally simple: one 50 ml bottle, one discovery set, or a short inquiry
+            if you want the house to recommend a formula from your current wardrobe and use case.
+          </p>
+          <div class="purchase-options" aria-label="Purchase options">
+            <a class="purchase-line" href="mailto:orders@obsidianatelier.example?subject=50 ml bottle order">
+              <span>50 ml extrait bottle</span>
+              <strong>$185</strong>
+            </a>
+            <a class="purchase-line" href="mailto:orders@obsidianatelier.example?subject=Discovery set order">
+              <span>Discovery set / 4 x 2 ml</span>
+              <strong>$34</strong>
+            </a>
+          </div>
         </div>
 
-        <div class="contact-grid">
-          <form class="request-form" id="requestForm">
-            <label>
-              Имя
-              <input type="text" name="name" placeholder="Как к вам обращаться" required />
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="phone" placeholder="+7" required />
-            </label>
-            <label>
-              Что ищем
-              <select name="goal" required>
-                <option value="">Выберите задачу</option>
-                <option>Аренда квартиры</option>
-                <option>Покупка квартиры</option>
-                <option>Дом или таунхаус</option>
-                <option>Переезд под ключ</option>
-              </select>
-            </label>
-            <label class="wide">
-              Район, бюджет, сроки
-              <textarea
-                name="brief"
-                placeholder="Например: Центр или Южный, до 55 000 ₽, заехать в июне"
-              ></textarea>
-            </label>
-            <label class="agreement wide">
-              <input type="checkbox" required />
-              <span>
-                Согласен с обработкой данных и
-                <a href="./agreement.html">пользовательским соглашением</a>
-              </span>
-            </label>
-            <button class="submit-btn wide" type="submit">Отправить запрос на подбор</button>
-            <p class="form-status wide" role="status" aria-live="polite"></p>
-          </form>
-
-          <aside class="faq">
-            <h3>Коротко перед заявкой</h3>
-            <details open>
-              <summary>Вы берёте оплату за просмотры?</summary>
-              <p>Нет. Оплата привязана к выбранному формату работы и договору.</p>
-            </details>
-            <details>
-              <summary>Можно начать дистанционно?</summary>
-              <p>Да. Бриф, подбор и первичные проверки проводим до приезда.</p>
-            </details>
-            <details>
-              <summary>Работаете только с арендой?</summary>
-              <p>Нет. Ведём аренду, покупку квартир и подбор домов в городе и рядом.</p>
-            </details>
-            <div class="legal">
-              <p>ООО «Адрес Хабаровск»</p>
-              <p>ИНН 2720000000 · ОГРН 1262700000000</p>
-              <p>680000, Хабаровск, ул. Муравьёва-Амурского, 18</p>
-              <a href="mailto:office@adres-khv.ru">office@adres-khv.ru</a>
-            </div>
-          </aside>
-        </div>
+        <form class="inquiry-form reveal" id="inquiry" aria-labelledby="inquiry-title">
+          <h3 id="inquiry-title">Request guidance</h3>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Fragrance direction
+            <select name="fragrance" id="fragranceSelect" required>
+              <option>Black Cedar</option>
+              <option>Iron Smoke</option>
+              <option>Paper Leather</option>
+              <option>Olive Shadow</option>
+              <option>Recommend one</option>
+            </select>
+          </label>
+          <label>
+            Current reference
+            <textarea
+              name="message"
+              placeholder="What you wear now, when you plan to wear it, and what you avoid."
+            ></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send inquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
-    <footer class="footer">
-      <span>© 2026 Адрес Хабаровск</span>
-      <a href="./agreement.html">Пользовательское соглашение</a>
-      <a href="tel:+74212900877">Позвонить</a>
+    <footer class="site-footer">
+      <span>Obsidian Atelier</span>
+      <a href="mailto:orders@obsidianatelier.example">orders@obsidianatelier.example</a>
+      <a href="#top">Back to top</a>
     </footer>
 
-    <script src="./script.js?v=20260517-anchorfix"></script>
+    <script src="./script.js?v=20260517-perfume"></script>
   </body>
 </html>

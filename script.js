@@ -1,12 +1,17 @@
-const form = document.querySelector("#requestForm");
+const form = document.querySelector("#inquiry");
 const statusNode = document.querySelector(".form-status");
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
+const revealNodes = document.querySelectorAll(".reveal");
+const fragranceRows = document.querySelectorAll(".fragrance-row");
+const fragranceSelect = document.querySelector("#fragranceSelect");
+
+document.documentElement.classList.add("has-js");
 
 const getHeaderOffset = () => {
-  const header = document.querySelector(".topbar");
-  const isMobile = window.matchMedia("(max-width: 620px)").matches;
+  const header = document.querySelector(".site-header");
+  const isSticky = window.matchMedia("(min-width: 721px)").matches;
 
-  return header && !isMobile ? header.getBoundingClientRect().height : 0;
+  return header && isSticky ? header.getBoundingClientRect().height : 0;
 };
 
 const scrollToHashTarget = (hash, behavior = "smooth") => {
@@ -40,13 +45,44 @@ window.addEventListener("load", () => {
   requestAnimationFrame(() => scrollToHashTarget(window.location.hash, "auto"));
 });
 
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.14 }
+  );
+
+  revealNodes.forEach((node) => observer.observe(node));
+} else {
+  revealNodes.forEach((node) => node.classList.add("is-visible"));
+}
+
+fragranceRows.forEach((row) => {
+  const button = row.querySelector("button");
+  button?.addEventListener("click", () => {
+    const fragrance = row.dataset.fragrance;
+    if (!fragrance) return;
+
+    fragranceRows.forEach((item) => item.classList.toggle("is-active", item === row));
+    if (fragranceSelect) fragranceSelect.value = fragrance;
+    scrollToHashTarget("#purchase");
+  });
+});
+
 form?.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const data = new FormData(form);
   const name = String(data.get("name") || "").trim();
-  const goal = String(data.get("goal") || "").trim();
+  const fragrance = String(data.get("fragrance") || "").trim();
 
-  statusNode.textContent = `${name || "Заявка"} принята: ${goal || "поиск жилья"}. Мы свяжемся и уточним параметры.`;
+  statusNode.textContent = `${name || "Inquiry"} received. We will reply with a concise recommendation for ${
+    fragrance || "the selected direction"
+  }.`;
   form.reset();
 });
